@@ -12,10 +12,12 @@
 @import 'util/mixin/position';
 @import 'util/mixin/coverer';
 @import 'util/mixin/size';
-
 @import 'util/mixin/shape/arrow';
 
 @import 'util/extend/image-replacement';
 @import 'util/extend/clearfix';
 @import 'util/extend/coverer';
 @import 'util/extend/centerer';
+
+// Layout styles
+@import 'layout/base';

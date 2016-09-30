@@ -112,3 +112,6 @@
   position: absolute;
   transform: translate(-50%, -50%); }
 
+:root {
+  font-size: 62.5%; }
+
