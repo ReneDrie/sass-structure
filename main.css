@@ -1,0 +1,78 @@
+/**
+ * Asset URL builder
+ * @access private
+ * @param {String} $type - Asset type, matching folder name
+ * @param {String} $file - Asset file name, including extension
+ * @return {URL} - A `url()` function leading to the asset
+ */
+/*
+ * Image asset helper
+ * @access public
+ * @param {String} $file - Asset file name, including extension
+ * @return {URL} - A `url()` function leading to the image
+ * @require {function} asset
+ */
+/*
+ * Font asset helper
+ * @access public
+ * @param {String} $file - Asset file name, including extension
+ * @return {URL} - A `url()` function leading to the font
+ * @require {function} asset
+ */
+/**
+ * Z-Index function
+ * @param {string} $list (Array) - The list to find the current z-index in
+ * @param {string} $element (String) - The name of the current element, must be in the $list
+ * @returns {number}
+ */
+/**
+ * easing function
+ * @param {string} $easeName - The name of the easing function.
+ * @returns {string} - Returns a cubic-bezier function with the easing values.
+ */
+/**
+ * Respond To (Breakpoint)
+ * @param {string} $name - Name of the breakpoint used in $breakpoints
+ */
+/**
+ * Hover Mixin for applying :hover pseudo styles
+ * Add your own implementation for showing hovers
+ * Example using Modernizr touch check: html.no-touch &:hover { @content; }
+ * Leaving it to just :hover by default. But best practice to always use the mixin
+ * @param $extraSelector:string (optional) = an extra selector that can have the same styles as a hover (for mobile/active state)
+ */
+/**
+ * Font Face
+ * @param {string} $fontName - Name of the font
+ * @param {string} $folderName - Subfolder inside the fonts folder
+ * @param {string} $fileName - Name of the font-file
+ * @param {string} $fontWeight (normal) - Font weight value
+ * @param {string} $fontStyle (normal) - Font style value
+ */
+/**
+ * Aspect ratio, create a :before pseudo element for setting an aspect ratio on an element
+ * @param {number} $width (1) - Percentage width
+ * @param {number} $height ($width) - Percentage height
+ * @param {boolean} $relative (true) - Add relative position to element
+ */
+/**
+ * Position
+ * @param {number} $top (0) - Top Position
+ * @param {number} $right ($top) - Right Position
+ * @param {number} $bottom ($top) - Bottom Position
+ * @param {number} $left ($right) - Left Position
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+.test {
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px; }
+
