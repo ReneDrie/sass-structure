@@ -56,11 +56,28 @@
  * @param {boolean} $relative (true) - Add relative position to element
  */
 /**
- * Position
+ * Position mixin for setting absolute position values
+ * The mixin can have multiple arguments providing a number
  * @param {number} $top (0) - Top Position
  * @param {number} $right ($top) - Right Position
  * @param {number} $bottom ($top) - Bottom Position
  * @param {number} $left ($right) - Left Position
+ *
+ * Or a map of multiple positions
+ * @param {map} $args... - A map containing multiple positions (top: 1px, left: 1px)
+ */
+/**
+ * Offset
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+/**
+ * Places an element absolute on top of the entire wrapper
+ */
+/**
+ * Size an Element
+ * @param {number} $width (1em) - Width of the element
+ * @param {number} $height ($width) - Height of the element
  */
 /**
  * Creates an arrow
@@ -70,9 +87,28 @@
  * @param {number} $stretch (1) - Amount of the stretch of the arrow
  * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
  */
-.test {
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px; }
+.ir {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both; }
+
+.coverer {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute; }
+
+.centerer {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); }
 
